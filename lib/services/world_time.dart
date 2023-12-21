@@ -71,11 +71,11 @@ class WorldTime {
 
         DateTime now = DateTime.parse(datetime);
         now = now.add(Duration(hours: offset, minutes: minutes));
-        // isDaytime = now.hour > 6 && now.hour < 20;
-        isDaytime = datetime.contains("AM") &&
-            now.hour > 6 &&
-            datetime.contains("PM") &&
-            now.hour < 6;
+        isDaytime = now.hour > 6 && now.hour <= 18;
+        // isDaytime = datetime.contains("AM") &&
+        //     now.hour > 6 &&
+        //     datetime.contains("PM") &&
+        //     now.hour < 6;
         time = DateFormat.jm().format(now);
       } else {
         print('Failed with status code: ${response.statusCode}');

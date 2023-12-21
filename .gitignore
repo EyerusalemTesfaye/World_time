@@ -41,3 +41,57 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Miscellaneous
+*.DS_Store
+*.iml
+*.log
+.idea/
+.vscode/
+
+# Gradle files
+**/android/gradle-wrapper.jar
+**/android/build/
+**/android/local.properties
+**/android/gradle.properties
+**/android/gradlew
+**/android/gradlew.bat
+**/android/gradle/
+
+# Android generated files
+**/android/app/build/
+**/android/app/outputs/
+
+# iOS generated files
+**/ios/Pods/
+**/ios/Flutter/.last_build_id
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/.plugin_symlinks/
+**/ios/Flutter/.flutter-plugins
+**/ios/Flutter/.flutter-plugins-dependencies
+**/ios/Flutter/.dart_tool/
+
+# Flutter tool
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+
+# Build files
+**/build/
+**/web/build/
+**/web/asset-manifest.json
+**/web/main.dart.js
+**/web/main.dart.js.map
+**/web/favicon.ico
+**/web/packages/
+**/web/*.js
+
+# Generated files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+/build/
+.packages
+.dart_tool/
+.dart_tool/**
